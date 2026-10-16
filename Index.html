@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Aplicación Web</title>
+  <style>
+    /* Estilos básicos para limpiar márgenes y centrar el contenido */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #1a202c;
+    }
+
+    /* Contenedor del iFrame para asegurar adaptabilidad */
+    .iframe-container {
+      width: 100%;
+      max-width: 1000px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 750px;
+      border: none;
+      display: block;
+    }
+
+    /* Ajuste de altura para pantallas pequeñas (móviles) */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      iframe {
+        height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mi Aplicación EducaAnd</h1>
+  </header>
+
+  <main class="iframe-container">
+    <iframe 
+      src="https://script.google.com/a/macros/g.educaand.es/s/AKfycbwpX9Qk-QJKE9ibtEAWlRMW78nAddm0s1nqsNJR2amSdb5-fNk6cyGx-0h4gXx9VA_t/exec"
+      allow="autoplay">
+    </iframe>
+  </main>
+
+</body>
+</html>
